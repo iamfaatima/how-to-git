@@ -44,37 +44,37 @@
                     <h1>Stashing</h1>
                     <p>
 
-                        Stashing files
+                        Stashing files  <br>
             Git stash is a very useful command, where git will 'hide' the changes on a dirty directory - but no worries you can re-apply them later. The command will save your local changes away and revert the working directory to match the HEAD commit.
+            <br>
+            # Stash local changes  <br>
+            $ git stash  <br>
             
-            # Stash local changes
-            $ git stash
+            # Stash local changes with a custom message <br>
+            $ git stash save "this is your custom message" <br>
             
-            # Stash local changes with a custom message
-            $ git stash save "this is your custom message"
-            
-            # Re-apply the changes you saved in your latest stash
+            # Re-apply the changes you saved in your latest stash <br>
             $ git stash apply
+            <br>
+            # Re-apply the changes you saved in a given stash number <br>
+            $ git stash apply stash@{stash_number} <br>
             
-            # Re-apply the changes you saved in a given stash number
-            $ git stash apply stash@{stash_number}
+            # Drops any stash by its number <br>
+            $ git stash drop stash@{0} <br>
             
-            # Drops any stash by its number
-            $ git stash drop stash@{0}
+            # Apply the stash and then immediately drop it from your stack <br>
+            $ git stash pop <br>
             
-            # Apply the stash and then immediately drop it from your stack
-            $ git stash pop
+            # 'Release' a particular stash from your list of stashes  <br>
+            $ git stash pop stash@{stash_number}  <br>
             
-            # 'Release' a particular stash from your list of stashes
-            $ git stash pop stash@{stash_number}
+            # List all stashes  <br>
+            $ git stash list  <br>
             
-            # List all stashes
-            $ git stash list
+            # Show the latest stash changes  <br>
+            $ git stash show  <br>
             
-            # Show the latest stash changes
-            $ git stash show
-            
-            # See diff details of a given stash number
+            # See diff details of a given stash number  <br>
             $ git diff stash@{0}</p>    </form>
 
 				<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
