@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>git log</title>
+    </head>
+    <body>
+        <p>
+
+            Git log
+# Show a list of all commits in a repository. This command shows everything about a commit, such as commit ID, author, date and commit message.
+$ git log
+
+# List of commits showing commit messages and changes
+$ git log -p
+
+# List of commits with the particular expression you are looking for
+$ git log -S 'something'
+
+# List of commits by author
+$ git log --author 'Author Name'
+
+# Show a list of commits in a repository in a more summarised way. This shows a shorter version of the commit ID and the commit message.
+$ git log --oneline
+
+# Show a list of commits in a repository since yesterday
+$ git log --since=yesterday
+
+# Shows log by author and searching for specific term inside the commit message
+$ git log --grep "term" --author "name"</p>
+    </body>
+</html>

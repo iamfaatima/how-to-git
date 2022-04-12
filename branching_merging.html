@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>branching and merging</title>
+    </head>
+    <body>
+        <p>
+
+            Branching and merging
+            # Creating a local branch
+            $ git checkout -b branchname
+            
+            # Switching between 2 branches (in fact, this would work on terminal as well to switch between 2 directories - $ cd -)
+            $ git checkout -
+            
+            # Pushing local branch to remote
+            $ git push -u origin branchname
+            
+            # Deleting a local branch - this won't let you delete a branch that hasn't been merged yet
+            $ git branch -d branchname
+            
+            # Deleting a local branch - this WILL delete a branch even if it hasn't been merged yet!
+            $ git branch -D branchname
+            
+            # Remove any remote refs you have locally that have been removed from your remote (you can substitute <origin> to any remote branch)
+            $ git remote prune origin
+            
+            # Viewing all branches, including local and remote branches
+            $ git branch -a
+            
+            # Viewing all branches that have been merged into your current branch, including local and remote
+            $ git branch -a --merged
+            
+            # Viewing all branches that haven't been merged into your current branch, including local and remote
+            $ git branch -a --no-merged
+            
+            # Viewing local branches
+            $ git branch
+            
+            # Viewing remote branches
+            $ git branch -r
+            
+            # Rebase master branch into local branch
+            $ git rebase origin/master
+            
+            # Pushing local branch after rebasing master into local branch
+            $ git push origin +branchname
+            Fetching and checking out remote branches
+            # This will fetch all the remote branches for you.
+            $ git fetch origin
+            
+            # With the remote branches in hand, you now need to check out the branch you are interested in, giving you a local working copy:
+            $ git checkout -b test origin/test
+            
+            # Deleting a remote branch
+            $ git branch -rd origin/branchname
+            $ git push origin --delete branchname  or  $ git push origin:branchname
+            Merging branch to trunk/master
+            # First checkout trunk/master
+            $ git checkout trunk/master
+            
+            # Now merge branch to trunk/master
+            $ git merge branchname
+            
+            # To cancel a merge
+            $ git merge --abort
+            Updating a local repository with changes from a Github repository
+            $ git pull origin master
+            Tracking existing branch
+            $ git branch --set-upstream-to=origin/foo foo</p>
+    </body>
+</html>
