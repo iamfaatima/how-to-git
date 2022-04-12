@@ -1,39 +1,106 @@
-<html>
-    <head>
-        <title>committing</title>
-    </head>
-    <body>
-        <p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V17</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					
+                    <h1> Intro to Git</h1>
+                    <p>
 
-            Committing files
-            After adding/staging a file, the next step is to commit staged file(s)
-            
-            # Commit staged file(s)
-            $ git commit -m 'commit message'
-            
-            # Add file and commit
-            $ git commit filename -m 'commit message'
-            
-            # Add file and commit staged file
-            $ git commit -am 'insert commit message'
-            
-            # Amending a commit
-            $ git commit --amend 'new commit message' or no message to maintain previous message
-            
-            # Squashing commits together
-            $ git rebase -i
-            This will give you an interface on your core editor:
-            # Commands:
-            #  p, pick = use commit
-            #  r, reword = use commit, but edit the commit message
-            #  e, edit = use commit, but stop for amending
-            #  s, squash = use commit, but meld into previous commit
-            #  f, fixup = like "squash", but discard this commit's log message
-            #  x, exec = run command (the rest of the line) using shell
-            
-            # Squashing commits together using reset --soft
-            $ git reset --soft HEAD~number_of_commits
-            $ git commit
-            ** WARNING: this will require force pushing commits</p>
-    </body>
+                        Committing files
+                        After adding/staging a file, the next step is to commit staged file(s)
+                        
+                        # Commit staged file(s)
+                        $ git commit -m 'commit message'
+                        
+                        # Add file and commit
+                        $ git commit filename -m 'commit message'
+                        
+                        # Add file and commit staged file
+                        $ git commit -am 'insert commit message'
+                        
+                        # Amending a commit
+                        $ git commit --amend 'new commit message' or no message to maintain previous message
+                        
+                        # Squashing commits together
+                        $ git rebase -i
+                        This will give you an interface on your core editor:
+                        # Commands:
+                        #  p, pick = use commit
+                        #  r, reword = use commit, but edit the commit message
+                        #  e, edit = use commit, but stop for amending
+                        #  s, squash = use commit, but meld into previous commit
+                        #  f, fixup = like "squash", but discard this commit's log message
+                        #  x, exec = run command (the rest of the line) using shell
+                        
+                        # Squashing commits together using reset --soft
+                        $ git reset --soft HEAD~number_of_commits
+                        $ git commit
+                        ** WARNING: this will require force pushing commits</p>
+                </form>
+
+				<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
 </html>
+

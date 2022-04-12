@@ -1,71 +1,137 @@
-<html>
-    <head>
-        <title>branching and merging</title>
-    </head>
-    <body>
-        <p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V17</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					
+                    <h1> Intro to Git</h1>
+					<p>
 
-            Branching and merging
-            # Creating a local branch
-            $ git checkout -b branchname
-            
-            # Switching between 2 branches (in fact, this would work on terminal as well to switch between 2 directories - $ cd -)
-            $ git checkout -
-            
-            # Pushing local branch to remote
-            $ git push -u origin branchname
-            
-            # Deleting a local branch - this won't let you delete a branch that hasn't been merged yet
-            $ git branch -d branchname
-            
-            # Deleting a local branch - this WILL delete a branch even if it hasn't been merged yet!
-            $ git branch -D branchname
-            
-            # Remove any remote refs you have locally that have been removed from your remote (you can substitute <origin> to any remote branch)
-            $ git remote prune origin
-            
-            # Viewing all branches, including local and remote branches
-            $ git branch -a
-            
-            # Viewing all branches that have been merged into your current branch, including local and remote
-            $ git branch -a --merged
-            
-            # Viewing all branches that haven't been merged into your current branch, including local and remote
-            $ git branch -a --no-merged
-            
-            # Viewing local branches
-            $ git branch
-            
-            # Viewing remote branches
-            $ git branch -r
-            
-            # Rebase master branch into local branch
-            $ git rebase origin/master
-            
-            # Pushing local branch after rebasing master into local branch
-            $ git push origin +branchname
-            Fetching and checking out remote branches
-            # This will fetch all the remote branches for you.
-            $ git fetch origin
-            
-            # With the remote branches in hand, you now need to check out the branch you are interested in, giving you a local working copy:
-            $ git checkout -b test origin/test
-            
-            # Deleting a remote branch
-            $ git branch -rd origin/branchname
-            $ git push origin --delete branchname  or  $ git push origin:branchname
-            Merging branch to trunk/master
-            # First checkout trunk/master
-            $ git checkout trunk/master
-            
-            # Now merge branch to trunk/master
-            $ git merge branchname
-            
-            # To cancel a merge
-            $ git merge --abort
-            Updating a local repository with changes from a Github repository
-            $ git pull origin master
-            Tracking existing branch
-            $ git branch --set-upstream-to=origin/foo foo</p>
-    </body>
+                        Branching and merging
+                        # Creating a local branch
+                        $ git checkout -b branchname
+                        
+                        # Switching between 2 branches (in fact, this would work on terminal as well to switch between 2 directories - $ cd -)
+                        $ git checkout -
+                        
+                        # Pushing local branch to remote
+                        $ git push -u origin branchname
+                        
+                        # Deleting a local branch - this won't let you delete a branch that hasn't been merged yet
+                        $ git branch -d branchname
+                        
+                        # Deleting a local branch - this WILL delete a branch even if it hasn't been merged yet!
+                        $ git branch -D branchname
+                        
+                        # Remove any remote refs you have locally that have been removed from your remote (you can substitute <origin> to any remote branch)
+                        $ git remote prune origin
+                        
+                        # Viewing all branches, including local and remote branches
+                        $ git branch -a
+                        
+                        # Viewing all branches that have been merged into your current branch, including local and remote
+                        $ git branch -a --merged
+                        
+                        # Viewing all branches that haven't been merged into your current branch, including local and remote
+                        $ git branch -a --no-merged
+                        
+                        # Viewing local branches
+                        $ git branch
+                        
+                        # Viewing remote branches
+                        $ git branch -r
+                        
+                        # Rebase master branch into local branch
+                        $ git rebase origin/master
+                        
+                        # Pushing local branch after rebasing master into local branch
+                        $ git push origin +branchname
+                        Fetching and checking out remote branches
+                        # This will fetch all the remote branches for you.
+                        $ git fetch origin
+                        
+                        # With the remote branches in hand, you now need to check out the branch you are interested in, giving you a local working copy:
+                        $ git checkout -b test origin/test
+                        
+                        # Deleting a remote branch
+                        $ git branch -rd origin/branchname
+                        $ git push origin --delete branchname  or  $ git push origin:branchname
+                        Merging branch to trunk/master
+                        # First checkout trunk/master
+                        $ git checkout trunk/master
+                        
+                        # Now merge branch to trunk/master
+                        $ git merge branchname
+                        
+                        # To cancel a merge
+                        $ git merge --abort
+                        Updating a local repository with changes from a Github repository
+                        $ git pull origin master
+                        Tracking existing branch
+                        $ git branch --set-upstream-to=origin/foo foo</p>			</form>
+
+				<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
 </html>
+
