@@ -1,0 +1,38 @@
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It is very useful.
+free, open source distributed version control system tool designed to handle everything from small to very large projects with speed and efficiency. It was created by Linus Torvalds in 2005 to develop Linux Kernel. Git has the functionality, performance, security and flexibility that most teams and individual developers need. It also serves as an important distributed version-control DevOps tool. This ‘What Is Git’ blog is the first blog of my Git Tutorial series. I hope you will enjoy it. :-) 
+
+What is Git – Why Git Came Into Existence?
+We all know “Necessity is the mother of all inventions”. And similarly Git was also invented to fulfill certain necessities that the developers faced before Git. Software engineers use it.
+
+What is the purpose of Git?
+Git is primarily used to manage your project, comprising a set of code/text files that may change.
+But before we go further, let us take a step back to learn all about Version Control Systems (VCS) and how Git came into existence.
+Version Control is the management of changes to documents, computer programs, large websites and other collection of information.
+There are two types of VCS:
+Centralized Version Control System (CVCS)
+Distributed Version Control System (DVCS)
+Centralized VCS
+Centralized version control system (CVCS) uses a central server to store all files and enables team collaboration. It works on a single repository to which users can directly access a central server.
+
+Every programmer can extract or update their workstations with the data present in the repository or can make changes to the data or commit in the repository. Every operation is performed directly on the repository.
+
+
+Even though it seems pretty convenient to maintain a single repository, it has some major drawbacks. Some of them are:
+It is not locally available; meaning you always need to be connected to a network to perform any action.
+Since everything is centralized, in any case of the central server getting crashed or corrupted will result in losing the entire data of the project.
+This is when Distributed VCS comes to the rescue.
+Distributed VCS
+These systems do not necessarily rely on a central server to store all the versions of a project file.
+In Distributed VCS, every contributor has a local copy or “clone” of the main repository i.e. everyone maintains a local repository of their own which contains all the files and metadata present in the main repository.
+As you can see in the above diagram, every programmer maintains a local repository on its own, which is actually the copy or clone of the central repository on their hard drive. They can commit and update their local repository without any interference.
+They can update their local repositories with new data from the central server by an operation called “pull” and affect changes to the main repository by an operation called “push” from their local repository.
+The act of cloning an entire repository into your workstation to get a local repository gives you the following advantages:
+All operations (except push & pull) are very fast because the tool only needs to access the hard drive, not a remote server. Hence, you do not always need an internet connection.
+Committing new change-sets can be done locally without manipulating the data on the main
+repository. Once you have a group of change-sets ready, you can push them all at once.
+Since every contributor has a full copy of the project repository, they can share changes with one another if they want to get some feedback before affecting changes in the main repository.
+If the central server gets crashed at any point of time, the lost data can be easily recoveredfrom any one of the contributor’s local repositories.
+After knowing Distributed VCS, its time we take a dive into what is Git.
+What Is Git?
+Git is a Distributed Version Control tool that supports distributed non-linear workflows by providing
+data assurance for developing quality software. Before you go ahead, check out this video on GIT
